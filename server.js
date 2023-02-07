@@ -5,10 +5,10 @@ const cors = require('cors') //import cors
 const morgan = require('morgan') //import morgan
 const { PORT } = process.env //get the port from environment variable
 
-const authController = require('./controllers/Auth-new-controller')
-const userController = require('./controllers/User-new-controller')
-const postController = require('./controllers/Post-new-controller')
-const interactionController = require('./controllers/Interaction-new-controller')
+const authController = require('./controllers/Auth-controller')
+const userController = require('./controllers/User-controller')
+const postController = require('./controllers/Post-controller')
+const interactionController = require('./controllers/Interaction-controller')
 
 // parse incoming request bodies in a middleware before handlers
 app.use(express.json())
